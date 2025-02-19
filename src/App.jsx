@@ -8,15 +8,19 @@ import React from "react"
 import SearchBar from "./components/SearchBar"
 import Header from "./components/Header"
 import Catalog from "./components/Catalog"
+import { ToastContainer } from 'react-toastify'
+import Menu from "./components/Menu"
 
 const App = () => {
   return (
     <>
-      <Background/> 
-      <Nav />
-      <Header/>
-      <SearchBar/>
-      <Catalog/>
+      <Background />
+      <Nav /> 
+      <Menu />
+      <Header />
+      <ToastContainer className={"toast"} newestOnTop={true} />
+      <SearchBar />
+      <Catalog />
     </>
   )
 }

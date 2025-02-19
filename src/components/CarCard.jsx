@@ -4,6 +4,7 @@ import { GiBottomRight3dArrow, GiCarSeat, GiElectric } from 'react-icons/gi'
 import { MdGpsFixed } from 'react-icons/md'
 import { useState } from 'react'
 import AddFavorite from './AddFavorite'
+
 import CardImg from './CardImg'
 const CarCard = ({ car }) => {
   const { car_image_link, make_and_model, year, body_type, fuel_type, transmission, seats, gps, ac, bluetooth, price_day, id } = car;
@@ -64,7 +65,9 @@ const CarCard = ({ car }) => {
               <span translate='no' className='currency'>MAD</span>
               <span className='period'>/day</span>
             </p>
-            <AddFavorite carId={id}/>
+            <AddFavorite carId={id} carName={make_and_model
+              
+            }/>
             <button className='reserve-btn'>
               <TbBookmark className='icon'/>
               reserve</button>

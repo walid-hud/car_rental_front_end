@@ -17,6 +17,12 @@
         z-index: -1;
         background: linear-gradient(to top left, #050505, #161616, #050505);
     }
+    .toast{
+        width: 86vw;
+
+        margin: 4em 2.4em;
+        font-size: .8rem;
+    }
 
     #nav {
         position: fixed;
@@ -28,10 +34,9 @@
         align-items: center;
         padding: .5em 1em;
         backdrop-filter: blur(5px) saturate(1.5);
+        transition: all .5s ease-in-out;
     }
     
-    
-
     #logo-container {
         display: flex;
         align-items: center;
@@ -56,6 +61,100 @@
             color: aliceblue;
         }
 
+    }
+
+    #menu-container{
+        #icon{
+            top: 0;
+            position: fixed;
+            z-index: 1000;
+            margin-top: .7rem ;
+            margin-right: .5rem;
+            right: 0;
+            color: yellow;
+            font-size: 2rem;
+        }
+        .menu{
+            transform: translateX(100%);
+            z-index: 1000;
+            transition: all .3s ease-out;
+            position: fixed;
+            overflow: hidden;
+            top: 3rem;
+            right: 0;
+            width:65%;
+            height: calc(100vh - 3rem);
+            border: 1px solid red;
+            border-radius: 20px 0 0 0;
+            border-style: groove;
+            border-width: 2px;
+            border-color: yellow transparent transparent yellow ;
+            background: transparent;
+            backdrop-filter: blur(5px) brightness(.5);
+        }
+        .menu{
+            display: flex;
+            flex-direction: column;
+            font-family: 'Roboto', sans-serif ;
+            font-optical-sizing: auto;
+            .profile{                
+                height: 3rem;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                padding: .4rem;
+                justify-content: space-between;
+            }
+            p{
+                margin: .5em;
+                padding-top: 6px;
+                color: whitesmoke;
+                font-size: large;
+                font-weight: light;
+
+            }
+            .icon{
+                color: yellow;
+                font-size: 1.6rem;
+            }
+            .register{
+                height: 2rem;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                padding: .4rem;
+                justify-content: space-between;
+               
+                p{
+                    text-decoration: underline yellow 1px ;
+                    text-underline-offset: .2rem;    
+                }
+                h2{
+                    transform: translateY(2px);
+                    font-size: 1.8rem;
+                    color: yellow;
+                    text-decoration:none;
+                    
+                    
+                    
+                    
+                }
+            
+            
+            
+            }
+            
+
+        }
+
+
+
+        .menu-active{
+            transform: translateX(0%);
+            transition: all .3s ease-out;
+        }
     }
 
     #header-container {

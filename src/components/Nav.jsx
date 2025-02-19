@@ -4,8 +4,11 @@ const Nav = ({Children}) => {
     let nav = document.getElementById('nav')
     if (window.scrollY > 300) {
       nav.style.background = 'rgba(0,0,0,0.6)';
+      nav.style.borderBottom = "2px solid yellow"
     } else {
       nav.style.background = 'transparent';
+      nav.style.borderBottom = "none"
+
     }
   })
   return (
