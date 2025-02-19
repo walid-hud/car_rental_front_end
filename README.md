@@ -1,11 +1,3 @@
-<style>
-    li{
-        list-style-type: disc;        
-        }
-        li::marker {
-        color: yellow;
-    }
-</style>
 # <span style="color: yellow;">Slim Car </span>
 
 This is a web app for an actual car rental agency (althought they didn't actually hire me or anything 😐)
