@@ -1,7 +1,9 @@
-import { useState } from "react"
+import { useState , useEffect } from "react"
+
 import { MdClose, MdPerson, } from "react-icons/md"
 import { TbHeart, TbLogin, TbMenu2 } from "react-icons/tb"
-import { useEffect } from "react"
+import { Link } from "react-router-dom"
+
 
 const Menu = () => {
 
@@ -34,10 +36,12 @@ const Menu = () => {
           <MdPerson className="icon"/>
         </div>
         <hr />
+          <Link to="/favorites">
         <div className="profile">
           <p>favorites</p>
           <TbHeart className="icon"/>
         </div>
+          </Link>
         <div className="register">
           <p>sign up </p>
           <h2>|</h2>

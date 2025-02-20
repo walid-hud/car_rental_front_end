@@ -1,3 +1,6 @@
+import { TbArrowLeft} from "react-icons/tb"
+import { Link } from "react-router-dom"
+
 export function addToFavorite(id , icon){
     let favorite_cars = JSON.parse(localStorage.getItem("favorite_cars")) || []
     if(!favorite_cars.includes(id)){
@@ -23,4 +26,15 @@ export function removeFromFavorite(id , icon) {
         localStorage.setItem("favorite_cars", JSON.stringify(favorite_cars))
     }
     icon.classList.remove("saved")
+}
+
+export function ReturnButton(){
+    return <>
+    <Link to="/">
+        <button id="return-btn" >
+            <TbArrowLeft className="icon"/>
+            go back
+        </button>
+    </Link>
+    </>
 }

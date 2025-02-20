@@ -4,9 +4,6 @@ import CarCard from "./CarCard"
 const Catalog = () => {
   const [cars , setCars] = useState(null)
   const [loading , setLoading] = useState(false)
-  const getCarsData = async ()=>{
-    const res = fetch
-  }
   useEffect(()=>{
     const getData = async ()=>{
       const res = await fetch('http://192.168.11.113:3001/cars')
