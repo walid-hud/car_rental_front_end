@@ -38,3 +38,18 @@ export function ReturnButton(){
     </Link>
     </>
 }
+
+
+export async function carsPageLoader(){
+    try {
+        const response = await fetch("http://localhost:3001/cars")
+        if(!response.ok){
+            throw new Error("response not okay")
+        }
+        const data = await response.json()
+        return data
+
+    } catch (error) {
+        console.error(error)
+    }
+}

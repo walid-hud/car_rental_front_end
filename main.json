@@ -12,8 +12,8 @@
             "gps":true,
             "ac":true,
             "bluetooth":true,
-            "price_day": 500
-            
+            "price_day": 500,
+            "bags": 4
         },
         {
             "id":"2",
@@ -27,7 +27,8 @@
             "gps":false,
             "ac":true,
             "bluetooth":false,
-            "price_day": 450
+            "price_day": 450,
+            "bags": 5
         },
         {
             "id":"3",
@@ -41,7 +42,8 @@
             "gps":true,
             "ac":true,
             "bluetooth":true,
-            "price_day": 550
+            "price_day": 550,
+            "bags": 4
         },
         {
             "id":"4",
@@ -55,7 +57,8 @@
             "gps":true,
             "ac":true,
             "bluetooth":true,
-            "price_day": 800
+            "price_day": 800,
+            "bags": 2
         },
         {
             "id":"5",
@@ -69,7 +72,8 @@
             "gps":true,
             "ac":true,
             "bluetooth":true,
-            "price_day": 1000
+            "price_day": 1000,
+            "bags": 5
         },
         {
             "id":"6",
@@ -83,7 +87,218 @@
             "gps":true,
             "ac":true,
             "bluetooth":true,
-            "price_day": 900
+            "price_day": 900,
+            "bags": 6
+        },
+        {
+            "id":"7",
+            "car_image_link":"/audi_a4.jpeg",
+            "make_and_model": "Audi A4",
+            "year": 2020,
+            "body_type": "Sedan",
+            "fuel_type": "Petrol",
+            "transmission": "Automatic",
+            "seats": 5,
+            "gps":true,
+            "ac":true,
+            "bluetooth":true,
+            "price_day": 700,
+            "bags": 4
+        },
+        {
+            "id":"8",
+            "car_image_link":"/mercedes_benz_c_class.jpeg",
+            "make_and_model": "Mercedes-Benz C-Class",
+            "year": 2019,
+            "body_type": "Sedan",
+            "fuel_type": "Petrol",
+            "transmission": "Automatic",
+            "seats": 5,
+            "gps":true,
+            "ac":true,
+            "bluetooth":true,
+            "price_day": 750,
+            "bags": 4
+        },
+        {
+            "id":"9",
+            "car_image_link":"/volvo_xc90.jpeg",
+            "make_and_model": "Volvo XC90",
+            "year": 2021,
+            "body_type": "SUV",
+            "fuel_type": "Diesel",
+            "transmission": "Automatic",
+            "seats": 7,
+            "gps":true,
+            "ac":true,
+            "bluetooth":true,
+            "price_day": 950,
+            "bags": 6
+        },
+        {
+            "id":"10",
+            "car_image_link":"/jeep_wrangler.jpeg",
+            "make_and_model": "Jeep Wrangler",
+            "year": 2020,
+            "body_type": "SUV",
+            "fuel_type": "Petrol",
+            "transmission": "Manual",
+            "seats": 5,
+            "gps":true,
+            "ac":true,
+            "bluetooth":true,
+            "price_day": 850,
+            "bags": 4
+        },
+        {
+            "id":"11",
+            "car_image_link":"/chevrolet_camaro.jpeg",
+            "make_and_model": "Chevrolet Camaro",
+            "year": 2019,
+            "body_type": "Coupe",
+            "fuel_type": "Petrol",
+            "transmission": "Automatic",
+            "seats": 4,
+            "gps":true,
+            "ac":true,
+            "bluetooth":true,
+            "price_day": 800,
+            "bags": 2
+        },
+        {
+            "id":"12",
+            "car_image_link":"/nissan_altima.jpeg",
+            "make_and_model": "Nissan Altima",
+            "year": 2021,
+            "body_type": "Sedan",
+            "fuel_type": "Petrol",
+            "transmission": "Automatic",
+            "seats": 5,
+            "gps":true,
+            "ac":true,
+            "bluetooth":true,
+            "price_day": 600,
+            "bags": 4
+        },
+        {
+            "id":"13",
+            "car_image_link":"/hyundai_tucson.jpeg",
+            "make_and_model": "Hyundai Tucson",
+            "year": 2020,
+            "body_type": "SUV",
+            "fuel_type": "Diesel",
+            "transmission": "Automatic",
+            "seats": 5,
+            "gps":true,
+            "ac":true,
+            "bluetooth":true,
+            "price_day": 700,
+            "bags": 5
+        },
+        {
+            "id":"14",
+            "car_image_link":"/kia_sportage.jpeg",
+            "make_and_model": "Kia Sportage",
+            "year": 2021,
+            "body_type": "SUV",
+            "fuel_type": "Petrol",
+            "transmission": "Automatic",
+            "seats": 5,
+            "gps":true,
+            "ac":true,
+            "bluetooth":true,
+            "price_day": 650,
+            "bags": 5
+        },
+        {
+            "id":"15",
+            "car_image_link":"/mazda_cx_5.jpeg",
+            "make_and_model": "Mazda CX-5",
+            "year": 2020,
+            "body_type": "SUV",
+            "fuel_type": "Petrol",
+            "transmission": "Automatic",
+            "seats": 5,
+            "gps":true,
+            "ac":true,
+            "bluetooth":true,
+            "price_day": 700,
+            "bags": 5
+        },
+        {
+            "id":"16",
+            "car_image_link":"/subaru_outback.jpeg",
+            "make_and_model": "Subaru Outback",
+            "year": 2019,
+            "body_type": "SUV",
+            "fuel_type": "Petrol",
+            "transmission": "Automatic",
+            "seats": 5,
+            "gps":true,
+            "ac":true,
+            "bluetooth":true,
+            "price_day": 750,
+            "bags": 5
+        },
+        {
+            "id":"17",
+            "car_image_link":"/ford_explorer.jpeg",
+            "make_and_model": "Ford Explorer",
+            "year": 2021,
+            "body_type": "SUV",
+            "fuel_type": "Petrol",
+            "transmission": "Automatic",
+            "seats": 7,
+            "gps":true,
+            "ac":true,
+            "bluetooth":true,
+            "price_day": 900,
+            "bags": 6
+        },
+        {
+            "id":"18",
+            "car_image_link":"/toyota_rav4.jpeg",
+            "make_and_model": "Toyota RAV4",
+            "year": 2020,
+            "body_type": "SUV",
+            "fuel_type": "Petrol",
+            "transmission": "Automatic",
+            "seats": 5,
+            "gps":true,
+            "ac":true,
+            "bluetooth":true,
+            "price_day": 700,
+            "bags": 5
+        },
+        {
+            "id":"19",
+            "car_image_link":"/honda_cr_v.jpeg",
+            "make_and_model": "Honda CR-V",
+            "year": 2021,
+            "body_type": "SUV",
+            "fuel_type": "Petrol",
+            "transmission": "Automatic",
+            "seats": 5,
+            "gps":true,
+            "ac":true,
+            "bluetooth":true,
+            "price_day": 750,
+            "bags": 5
+        },
+        {
+            "id":"20",
+            "car_image_link":"/lexus_rx.jpeg",
+            "make_and_model": "Lexus RX",
+            "year": 2020,
+            "body_type": "SUV",
+            "fuel_type": "Petrol",
+            "transmission": "Automatic",
+            "seats": 5,
+            "gps":true,
+            "ac":true,
+            "bluetooth":true,
+            "price_day": 850,
+            "bags": 5
         }
     ]
 }

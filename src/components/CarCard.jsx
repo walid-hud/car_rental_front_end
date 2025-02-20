@@ -1,5 +1,5 @@
 import { TbManualGearbox, TbAutomaticGearbox , TbAirConditioning, TbBluetooth, TbBluetoothX, TbBluetoothConnected, TbArrowRight, TbBookmark  } from 'react-icons/tb'
-import { BsFuelPump, BsFuelPumpDiesel } from 'react-icons/bs'
+import { BsBag, BsBagX, BsFuelPump, BsFuelPumpDiesel } from 'react-icons/bs'
 import { GiBottomRight3dArrow, GiCarSeat, GiElectric } from 'react-icons/gi'
 import { MdGpsFixed } from 'react-icons/md'
 import { useState } from 'react'
@@ -7,7 +7,7 @@ import AddFavorite from './AddFavorite'
 
 import CardImg from './CardImg'
 const CarCard = ({ car }) => {
-  const { car_image_link, make_and_model, year, body_type, fuel_type, transmission, seats, gps, ac, bluetooth, price_day, id } = car;
+  const { car_image_link, make_and_model, year, body_type, fuel_type, transmission, seats, gps, ac, bluetooth, price_day, id , bags} = car;
 
   return (
       <div id="card-container">
@@ -42,6 +42,11 @@ const CarCard = ({ car }) => {
           <p>
             <GiCarSeat className="icon"/>{seats + ' '} 
             seats
+          </p>
+          <div className='devider'></div>
+          <p>
+            <BsBag className="icon"/>{bags + " "}
+            bags 
           </p>
           {gps?
           <>
