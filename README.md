@@ -17,7 +17,7 @@ This is a web app for an actual car rental agency (althought they didn't actuall
 
 <sub>why sqlite and not MongoDB ? </sub>
 <br>
-<sub>I want this be a realistic project so, I think it makes total sense to just store all data in a basic sqlite data base and have the car images in the public folder </sub>
+<sub>I want this be a realistic project so, I think it makes total sense to just store all data in a basic sqlite database and store the car images (20 or so) in the public folder </sub>
  
 
 
