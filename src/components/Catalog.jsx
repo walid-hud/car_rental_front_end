@@ -2,6 +2,7 @@ import { useEffect, useState} from "react"
 import {BarLoader} from 'react-spinners'
 import CarCard from "./CarCard"
 import { NavLink } from "react-router-dom"
+import { MdExpandMore } from "react-icons/md"
 const Catalog = () => {
   const [limit , setLimit] = useState(3)
   const [cars , setCars] = useState(null)
@@ -28,10 +29,20 @@ const Catalog = () => {
         })}
     </div>
     <div id="load-more-container">
-        {limit === 3 && <button onClick={()=>setLimit(6)}>more</button>}
-        {limit === 6 && <NavLink to={"/cars"} onClick={()=>setLimit(3)}>
-                          <button>see all cars</button>
-                        </NavLink>}
+        {limit === 3 && 
+        <button className="more" 
+        onClick={()=>setLimit(6)}>
+          more
+          <MdExpandMore className="icon"/>
+        </button>}
+        {limit === 6 &&
+        <NavLink to={"/cars"} onClick={()=>setLimit(3)}>
+          <button className="see-all">
+            see all cars
+          <MdExpandMore className="icon" style={{rotate:"-90deg"}}/>
+            
+          </button>
+        </NavLink>}
     </div>
     </>
   )

@@ -15,7 +15,8 @@
         z-index: -1;
         background: linear-gradient(to top left, #050505, #161616, #050505);
     }
-    .toast{
+
+    .toast {
         width: 86vw;
 
         margin: 4em 2.4em;
@@ -34,7 +35,7 @@
         backdrop-filter: blur(5px) saturate(1.5);
         transition: all .3s ease-in-out;
     }
-    
+
     #logo-container {
         display: flex;
         align-items: center;
@@ -61,18 +62,19 @@
 
     }
 
-    #menu-container{
-        #icon{
+    #menu-container {
+        #icon {
             top: 0;
             position: fixed;
             z-index: 1000;
-            margin-top: .7rem ;
+            margin-top: .7rem;
             margin-right: .5rem;
             right: 0;
             color: yellow;
             font-size: 2rem;
         }
-        .menu{
+
+        .menu {
             transform: translateX(100%);
             z-index: 1000;
             transition: all .3s ease-out;
@@ -80,22 +82,24 @@
             overflow: hidden;
             top: 3rem;
             right: 0;
-            width:65%;
+            width: 65%;
             height: calc(100vh - 3rem);
             border: 1px solid red;
             border-radius: 20px 0 0 0;
             border-style: groove;
             border-width: 2px;
-            border-color: yellow transparent transparent yellow ;
+            border-color: yellow transparent transparent yellow;
             background: transparent;
             backdrop-filter: blur(5px) brightness(.5);
         }
-        .menu{
+
+        .menu {
             display: flex;
             flex-direction: column;
-            font-family: 'Roboto', sans-serif ;
+            font-family: 'Roboto', sans-serif;
             font-optical-sizing: auto;
-            .profile{                
+
+            .profile {
                 height: 3rem;
                 width: 100%;
                 display: flex;
@@ -104,7 +108,8 @@
                 padding: .4rem;
                 justify-content: space-between;
             }
-            p{
+
+            p {
                 margin: .5em;
                 padding-top: 6px;
                 color: whitesmoke;
@@ -112,11 +117,13 @@
                 font-weight: light;
 
             }
-            .icon{
+
+            .icon {
                 color: yellow;
                 font-size: 1.6rem;
             }
-            .register{
+
+            .register {
                 height: 2rem;
                 width: 100%;
                 display: flex;
@@ -124,39 +131,40 @@
                 justify-content: end;
                 padding: .4rem;
                 justify-content: space-between;
-               
-                p{
-                    text-decoration: underline yellow 1px ;
-                    text-underline-offset: .2rem;    
+
+                p {
+                    text-decoration: underline yellow 1px;
+                    text-underline-offset: .2rem;
                 }
-                h2{
+
+                h2 {
                     transform: translateY(2px);
                     font-size: 1.8rem;
                     color: yellow;
-                    text-decoration:none;
+                    text-decoration: none;
                 }
-           
-            
-            
-            
+
+
+
+
             }
-            
-            .link-active{
-                .link-text{
-                color: yellow;
+
+            .link-active {
+                .link-text {
+                    color: yellow;
                 }
             }
-           
+
         }
 
 
 
-        .menu-active{
+        .menu-active {
             transform: translateX(0%);
             transition: all .3s ease-out;
-            
+
         }
-        
+
     }
 
     #header-container {
@@ -224,7 +232,7 @@
             margin-bottom: 5px;
         }
 
-        .loaded::after{
+        .loaded::after {
             margin-top: 5px;
             content: ' ';
             display: block;
@@ -236,73 +244,81 @@
             animation: line-animation 1s ease-in-out forwards;
             margin-bottom: 15px;
         }
-        
+
     }
-    #card-container{
-        animation: fade-in forwards .3s ease-out ;
+
+    #card-container {
+        animation: fade-in forwards .3s ease-out;
         display: flex;
         flex-direction: column;
         color: white;
         border: 0;
-        background: linear-gradient(180deg , #000 ,silver , rgba(122, 121, 121, 0.521)50%,black);
+        background: linear-gradient(180deg, #000, silver, rgba(122, 121, 121, 0.521)50%, black);
         outline: 1px solid rgba(245, 245, 245, 0.616);
         border-radius: 5%;
         overflow: hidden;
         transition: all 1s ease-in-out;
-        padding:5px 5px;
+        padding: 5px 5px;
         margin-bottom: 1em;
-        .car-img{
-            border-radius:15px ;
+
+        .car-img {
+            border-radius: 15px;
         }
-        
-        .title{
+
+        .title {
             display: flex;
             align-items: baseline;
             width: 100%;
             justify-content: space-between;
             padding-top: 10px;
         }
-        .name{
+
+        .name {
             color: whitesmoke;
             font-size: 1.2rem;
             text-transform: capitalize;
 
         }
-        .year{       
+
+        .year {
             font-size: .75rem;
             opacity: .8;
             font-family: "Source Code Pro", serif;
             font-optical-sizing: auto;
 
         }
-        .category{
+
+        .category {
             color: hsl(61, 100%, 50%);
             font-size: 1rem;
             text-transform: capitalize;
             font-family: "Source Code Pro", serif;
             font-optical-sizing: auto;
-            .icon{
+
+            .icon {
                 color: rgba(255, 255, 0, 0.651);
-                margin:0 0 -3px -10px ;
+                margin: 0 0 -3px -10px;
 
             }
         }
-        .details-container{
+
+        .details-container {
             margin-top: .5em;
             display: flex;
             flex-wrap: wrap;
             font-size: .9rem;
             color: rgb(165, 165, 165);
-            justify-content: start;  
+            justify-content: start;
             font-family: "Source Code Pro", 'Courier New', Courier, monospace;
             font-optical-sizing: auto;
-            
-            .icon{
+
+            .icon {
                 color: rgba(255, 255, 0, 0.651);
                 margin-inline: 0 5px;
             }
         }
-        .devider{
+
+        .devider {
             display: inline-block;
             height: 1rem;
             margin: 0px 5px;
@@ -310,34 +326,39 @@
             background-color: grey;
             transform: translateY(2px);
         }
-        .actions{
+
+        .actions {
             display: flex;
             padding: 1em 0em;
-            justify-content: space-between; 
-            align-items: center;           
+            justify-content: space-between;
+            align-items: center;
             margin-top: 1em;
             font-family: "Source Code Pro", 'Courier New', Courier, monospace;
             font-optical-sizing: auto;
-            .price{
+
+            .price {
                 font: 1em sans-serif;
                 font-size: 1.4rem;
                 color: yellow;
                 filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)) brightness(1.2);
             }
-            .currency{
+
+            .currency {
                 color: grey;
                 font-size: .8rem;
                 text-shadow: none;
-                margin-inline: 5px 0 ;
+                margin-inline: 5px 0;
                 display: inline-block;
-                
+
             }
-            .period{
+
+            .period {
                 text-shadow: none;
                 font-size: .8rem;
                 color: gray;
             }
-            .reserve-btn{
+
+            .reserve-btn {
                 background-color: yellow;
                 font-size: 1em;
                 color: black;
@@ -345,39 +366,44 @@
                 padding: .5em 1em;
                 border-radius: 5px;
                 transition: all .5s ease-in-out;
-                .icon{
+
+                .icon {
                     margin-bottom: -3px;
                     margin-inline: 0 5px;
                 }
             }
+
             .reserve-btn:active {
                 background-color: white;
                 color: black;
                 transform: scale(0.9);
-                transition: all .4s  cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                .icon{
+                transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+                .icon {
                     fill: yellow;
                 }
             }
-            .save-icon{
+
+            .save-icon {
                 scale: 1.2;
                 overflow: visible;
             }
-            .saved{
+
+            .saved {
                 fill: red;
             }
-            
 
-            
 
-            
-            
-            
+
+
+
+
+
         }
 
     }
-   
-    #favorites-container{
+
+    #favorites-container {
         margin-top: 7rem;
         height: calc(100vh - 3rem);
         width: 100%;
@@ -389,7 +415,7 @@
             margin-bottom: 5px;
         }
 
-        .loaded::after{
+        .loaded::after {
             margin-top: 5px;
             content: ' ';
             display: block;
@@ -399,9 +425,11 @@
             width: 0%;
             height: 2px;
             animation: line-animation 1s ease-in-out forwards;
-            margin-bottom: 15px;}
+            margin-bottom: 15px;
+        }
     }
-    #img-error{
+
+    #img-error {
         width: 100%;
         height: 200px;
         display: flex;
@@ -409,14 +437,16 @@
         align-items: center;
         justify-content: space-evenly;
         background-color: rgba(0, 0, 0, 0.897);
-        border-radius:15px ;
-        .icon{
+        border-radius: 15px;
+
+        .icon {
             font-size: 4rem;
             color: yellow;
             stroke-width: .8;
-            
+
         }
-        p{
+
+        p {
             font-family: "Source Code Pro", 'Courier New', Courier, monospace;
             text-align: center;
             font-size: .9rem;
@@ -425,22 +455,26 @@
         }
     }
 
-    #no-favorites{
+    #no-favorites {
         width: 100%;
         height: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        box-shadow: -2px -2px 10px #5050502d,2px 2px 10px #5050502d ;
+        /* outline: 1px solid red; */
+
         background-color: rgba(0, 0, 0, 0.7);
-        border-radius:15px ;
-        .icon{
+        border-radius: 15px;
+
+        .icon {
             font-size: 4rem;
-            color: yellow;
-            
+            fill: yellow;
+            fill-opacity: 0.7;
+
         }
-        p{
+
+        p {
             padding-top: 2rem;
             font-family: "Source Code Pro", 'Courier New', Courier, monospace;
             text-align: center;
@@ -450,7 +484,7 @@
         }
     }
 
-    #return-btn{
+    #return-btn {
         margin-top: 1em;
         position: relative;
         left: 50%;
@@ -463,21 +497,57 @@
         padding: .5em 1em;
         border-radius: 10px;
         transition: all .5s ease-in-out;
-        .icon{
+
+        .icon {
             margin-bottom: -3px;
             margin-inline: 0 5px;
         }
     }
-    #return-btn:active {
+
+    #return-btn:focus-within {
         background-color: white;
         color: black;
-        transition: all .4s  cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        .icon{
+        transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+        .icon {
             fill: yellow;
         }
     }
 
-    #all-cars-container{
+    #load-more-container {
+
+        .more,
+        .see-all {
+            display: block;
+            text-align: center;
+            margin: auto;
+            background-color: yellow;
+            font-size: 1rem;
+            color: black;
+            border: none;
+            padding: .5em 1em;
+            border-radius: 10px;
+            transition: all .5s ease-in-out;
+
+            .icon {
+                margin-bottom: -3px;
+                margin-inline: 5px 0px;
+
+            }
+        }
+
+        button::focus-within {
+            background-color: white;
+            color: black;
+            transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+            .icon {
+                fill: yellow;
+            }
+        }
+    }
+
+    #all-cars-container {
         margin: auto;
         margin-top: calc(4rem + 4px);
     }
@@ -501,6 +571,7 @@
         opacity: 0;
         transform: translateY(300px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0px);

@@ -1,5 +1,6 @@
+import { useEffect } from "react"
 import { TbArrowLeft} from "react-icons/tb"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 export function addToFavorite(id , icon){
     let favorite_cars = JSON.parse(localStorage.getItem("favorite_cars")) || []
@@ -53,3 +54,15 @@ export async function carsPageLoader(){
         console.error(error)
     }
 }
+
+
+export function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
+
